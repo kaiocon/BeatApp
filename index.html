@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+	<title>Beat</title>
+	<link href="beat.css" rel="stylesheet"/>
+	  
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+	<script type="text/javascript" src="beat.js"></script>
+	<script type="text/javascript" src="Chart.js"></script>
+	<link rel="manifest" href="/manifest.json">
+	
+	
+</head>
+
+<body>
+
+<div id ="wrapper">
+	
+
+   
+  
+
+  <div id="topbar">
+  <img src="images/menu.svg" id="menu">
+  <img src="images/logout.svg" id="logout">
+  </div>
+	
+	
+	<img id="logo" src="images/logo.png">
+	<div id="loginForm">
+	<input type="text" name="userName" id="userName" placeholder="Username">
+	<input type="password" name="password" id="password" placeholder="•••••••">
+	<div id="login" class="button">Login</div>
+	<a id="create" href="#">Create an account</a>
+	</div>
+	
+	<div id="menuBox">
+		
+			<li><a href="#" id="mood">Mood</a></li>
+			<li><a href="#" id="graph">Graph</a></li>
+			<li><a href="#" id="settings">User Settings</a></li>
+		
+	</div>
+	
+	<div id="regForm">
+	<h1>Create Account</h1>
+	<input type="text" name="newUser" id="newUser" placeholder="Username">
+	<input type="password" name="newPassword" id="newPassword" placeholder="•••••••">
+	
+	<div id="register" class="button">Register</div>
+	<a id="back" href="#">Go Back</a>
+	</div>
+	
+	<div id="inputForm">
+	<div id="plus">+</div>
+	<div id="neg">-</div>
+	<h1 id="value">0</h1>
+	<select name="timeFrame" class="timeFrame">
+    <option  value="Hourly">Hourly</option>
+    <option value="Daily">Daily</option>
+	</select> 
+	<input type="text" name="activity" id="activity" placeholder="Activity">
+	<div id="start" class="button">Start</div>
+	<a id="clear" href="#">Clear Data</a>
+	</div>
+
+	<div id="graphForm">
+	<canvas id="myChart" width="400" height="400"></canvas>
+	</div>
+	
+	<div id="userForm">
+	<h1>Change Password</h1>
+	<input type="password" name="oldPassword" id="oldPassword" placeholder="Old Password">
+	<input type="password" name="changePassword" id="changePassword" placeholder="New Password">
+	
+	<div id="update" class="button">Update</div>
+	</div>
+	
+</body>
+</html>
